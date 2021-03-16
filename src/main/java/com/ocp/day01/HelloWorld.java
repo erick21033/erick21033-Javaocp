@@ -18,6 +18,7 @@ class Hi extends Hi3 implements Hi2 {
     @Override
     public void print() {
         System.out.println("HelloJava's first lesson");
+        System.out.println("HelloJava's first lesson");
     }
 
 }
