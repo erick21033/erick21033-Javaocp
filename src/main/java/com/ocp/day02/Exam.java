@@ -1,5 +1,5 @@
 
-package com.ocp.day2;
+package com.ocp.day02;
 
 public class Exam {
      String name;
