@@ -14,10 +14,10 @@ public class ArrayCv {
         //求標準差SD
         double sumOfSquares = 0;
         for(double n:nums){
-          sumOfSquares += MyMath.pow(n-avg,2);
+          sumOfSquares += Math.pow(n-avg,2);
         }
         System.out.printf("sumOfSquares: %.1f\n",sumOfSquares);
-        double sd = MyMath.sqrt((1.0/nums.length)*sumOfSquares);
+        double sd = Math.sqrt((1.0/nums.length)*sumOfSquares);
         System.out.printf("S.D: %.1f\n",sd);
         double cv = sd/avg;
         System.out.printf("C.V: %.1f\n",cv);
