@@ -1,5 +1,5 @@
 
-package com.ocp.doy05.util;
+package com.ocp.day05.util;
 
 public class Calc {
     public static int add(int x,int y){

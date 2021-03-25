@@ -1,7 +1,7 @@
 
-package com.ocp.doy05;
-import com.ocp.doy05.util.Calc;
-import static com.ocp.doy05.util.Calc.*;
+package com.ocp.day05;
+import com.ocp.day05.util.Calc;
+import static com.ocp.day05.util.Calc.*;
 
 public class CalcTest {
     public static void main(String[] args) {
