@@ -1,5 +1,5 @@
 
-package com.ocp.day07;
+package com.lab;
 
 public class StringToInArray {
     public static void main(String[] args) {
