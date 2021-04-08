@@ -7,7 +7,7 @@ class Hi3 {
     }
 }
 
-class Hi extends Hi3 implements Hi2 {
+class Hi extends Hi3  {
 
     String s = "This is my";
 
@@ -17,7 +17,6 @@ class Hi extends Hi3 implements Hi2 {
         System.out.println(s);
     }
 
-    @Override
     public void print() {
         System.out.println("HelloJava's first lesson");
         System.out.println("HelloJava's first lesson");
