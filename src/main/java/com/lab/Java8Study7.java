@@ -13,7 +13,7 @@ public class Java8Study7 {
                 .mapToInt(s ->s.length())
                 .sum();
         
-        
+                System.out.println(sum);
         
        
                 
