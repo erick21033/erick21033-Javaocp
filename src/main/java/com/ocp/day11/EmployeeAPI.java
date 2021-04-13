@@ -49,7 +49,7 @@ public class EmployeeAPI {
                 .mapToInt(e->e.getBudget()).sum();//Manager串流
     }
     //員工總數
-    public static int amout(){
+    public static int getAmout(){
         return employees.length;
     }
 }
