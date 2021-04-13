@@ -39,6 +39,7 @@ public class PersonMain4 {
             System.out.printf("%s %d %.1fcm %.1fkg bmi: %.2f\n",
                     p.getName(),p.getAge(),p.getHeight(),p.getWeight(),getBMI.apply(p));  
         };
+        
         Stream.of(persons)
                 .flatMap(p->Stream.of(p))
                 .filter(p->getBMI.apply(p)==maxBMI)
