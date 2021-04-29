@@ -30,6 +30,11 @@ public class Student extends Person{
     public void setTeacher(Teacher teacher) {
         this.teacher = teacher;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" + "score=" + score + ", teacher=" + teacher + '}';
+    }
     
    
     
