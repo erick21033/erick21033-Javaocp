@@ -3,6 +3,7 @@ package com.ocp.day18;
 import java.util.Arrays;
 import java.util.IntSummaryStatistics;
 import java.util.function.Consumer;
+import java.util.function.Predicate;
 
 public class School {
 
@@ -27,16 +28,18 @@ public class School {
                 .mapToInt(Teacher::getSalary)
                 .summaryStatistics();
         System.out.println(stat2.getSum());
-        System.out.println(stat2.getAverage());
+        System.out.printf("%.2f",stat2.getAverage());
 
         
         //印出不及格的學生 老師
+       Predicate<Student>notPass=x->x.getScore()<60;
+       
         Consumer<Student>p = x ->System.out.printf("學生:%s, 分數:%d, 老師:%s\n",x.getName(),x.getScore(),x.getTeacher().getName());
         double avg = Arrays.stream(DataCenter.getPeople())
                 .filter(x->x instanceof Student)
                 .map(x->(Student)(x))
                 .peek(p)
-                .filter(x->x.getScore()<60)
+                .filter(notPass)
                 .mapToInt(Student::getScore)
                 .average().getAsDouble();
                 
