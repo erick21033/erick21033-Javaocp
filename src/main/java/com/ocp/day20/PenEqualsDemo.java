@@ -2,8 +2,8 @@ package com.ocp.day20;
 
 public class PenEqualsDemo {
     public static void main(String[] args) {
-        Pen p1 = new Pen("red",10);
-        Pen p2 = new Pen("red",10);
+        Pen p1 = new Pen("Red",10);
+        Pen p2 = new Pen("Blue",10);
         System.out.println(p1);
         System.out.println(p2);
         //System.out.println(p1 == p2);
