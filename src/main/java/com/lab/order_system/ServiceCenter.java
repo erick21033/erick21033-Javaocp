@@ -6,7 +6,7 @@ public class ServiceCenter {
 
     private Set<Food> catalog = new DataCenter().getCatalog();
     //根據no來查找Food
-    public Food getFoddByNO(int no){
+    public Food getFoodByNo(int no){
         return catalog.stream()
                 .filter(food->food.getNo()==no)
                 .findFirst()
