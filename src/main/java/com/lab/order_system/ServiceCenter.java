@@ -24,4 +24,17 @@ public class ServiceCenter {
         }
         System.out.println("--------------");
     }
+    //檢視系統menu
+    public void menu(){
+        System.out.println("系統項目");
+        System.out.println("-------------------------");
+        System.out.println("1. 檢視Catalog");
+        System.out.println("2. 新增訂單餐點");
+        System.out.println("3. 查詢訂單餐點");
+        System.out.println("4. 取消訂單餐點");
+        System.out.println("5. 刪除全部訂單");
+        System.out.println("6. 結帳");
+        System.out.println("0. 離開");
+        System.out.println("-------------------------");
+    }
 }

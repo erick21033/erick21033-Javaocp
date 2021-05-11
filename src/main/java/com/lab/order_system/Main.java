@@ -12,6 +12,6 @@ public class Main {
     meun();
     }
     public static void meun(){
-        
+        System.out.println("");
     }
 }
