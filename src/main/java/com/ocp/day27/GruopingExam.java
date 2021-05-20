@@ -8,7 +8,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import static java.util.stream.Collectors.toSet;
 
-public class GroupingExam {
+public class GruopingExam {
     public static void main(String[] args) {
         List<Exam> exams = Arrays.asList(
                 new Exam("John", 100),
