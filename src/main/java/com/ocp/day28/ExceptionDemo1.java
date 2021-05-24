@@ -1,6 +1,6 @@
 package com.ocp.day28;
 
-import com.sun.xml.internal.stream.Entity;
+
 import java.util.Scanner;
 
 public class ExceptionDemo1 {
