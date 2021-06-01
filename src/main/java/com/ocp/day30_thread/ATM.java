@@ -7,7 +7,7 @@ class Account {//銀行帳戶
     public Account(int balance) {
         this.balance = balance;
     } 
-    public void withdraw(int cash)throws Exception{//提款方法
+    public synchronized void withdraw(int cash) throws Exception {//提款方法
         String name = Thread.currentThread().getName();//提款人
         System.out.printf("%s 準備提款...\n",name);
         //取得目前帳戶餘額
@@ -47,10 +47,10 @@ class WithDraw implements Runnable{//提款執行緒
 }
 public class ATM {
     public static void main(String[] args) {
-        Account account = new Account(10000);
+        Account account = new Account(10000);//資源 帳號
         Thread t1 = new Thread(new WithDraw(account,5000),"小明");
-        Thread t2 = new Thread(new WithDraw(account,5000),"小華");
-        Thread t3 = new Thread(new WithDraw(account,5000),"小英");
+        Thread t2 = new Thread(new WithDraw(account,3000),"小華");
+        Thread t3 = new Thread(new WithDraw(account,4000),"小英");
         t1.start();
         t2.start();
         t3.start();
